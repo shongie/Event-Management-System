@@ -1,6 +1,7 @@
 import React from "react";
 import Home from '../home/home';
 import './dashboard.css';
+import Profile from '../profile/profile'
 
 function dashboard() {
 
@@ -23,7 +24,8 @@ function dashboard() {
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col  justify-center">
            <main>
-            <section id="home"><Home /></section>
+            {/* <section id="home"><Home /></section> */}
+            <section id="home"><Profile /></section>
            </main>
           </div>
         
