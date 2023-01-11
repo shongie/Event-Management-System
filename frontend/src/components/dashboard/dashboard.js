@@ -66,6 +66,11 @@ function dashboard() {
                 Profile
                 </a>
               </li>
+              <li id="scroll">
+                <a href="#contact" >
+                Logout
+                </a>
+              </li>
             </div>
           </ul>
         </div>
