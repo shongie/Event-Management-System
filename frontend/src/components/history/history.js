@@ -1,13 +1,19 @@
 import React from "react";
+//import Dashboard from "../dashboard/dashboard";
 
 function history() {
   return (
+
+
+    
     <div className="table">
       <div className="overflow-x-auto">
+        {/* <main>
+        <section id="home"><Dashboard /></section>
+        </main> */}
         <table className="table table-compact w-full">
           <thead>
             <tr>
-              <th></th>
               <th>Venue</th>
               <th>Event Name</th>
               <th>Date</th>

@@ -11,7 +11,7 @@ import Dashboard from "./components/dashboard/dashboard";
 function App() {
   return (
     <div data-theme="cupcake">
-
+  
       <Router>
         <Routes>
           <Route path="/" element={<Dashboard />}></Route>
@@ -21,7 +21,11 @@ function App() {
           <Route path="profile" element={<Profile/>}></Route>
         </Routes>
       </Router>
+
+    
     </div>
+
+   
 
     //routes
   );

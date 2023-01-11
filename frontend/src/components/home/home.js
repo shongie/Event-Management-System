@@ -9,7 +9,7 @@ function home() {
         <div className="card w-96 bg-primary text-primary-content mt-16">
           <div className="card-body text-center">
             <h2 className="card-title flex justify-center">Upcoming Events</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>Upcoming events will happen in the near future.</p>
             <div className="card-actions justify-end">
               
             </div>
@@ -19,7 +19,7 @@ function home() {
         <div className="card w-96 bg-primary text-primary-content mt-16">
           <div className="card-body ">
             <h2 className="card-title flex justify-center ">Past Events</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>Past events and things happened or existed before the present time. </p>
             <div className="card-actions justify-end">
             
             </div>
@@ -28,8 +28,8 @@ function home() {
 
         <div className="card w-96 bg-primary text-primary-content mt-16">
           <div className="card-body">
-            <h2 className="card-title flex justify-center ">Ongoing Events</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <h2 className="card-title flex justify-center ">Inprocess Events</h2>
+            <p>Events that are in progress.</p>
             <div className="card-actions justify-end">
             
             </div>
@@ -39,7 +39,7 @@ function home() {
         <div className="card w-96 bg-primary text-primary-content mt-16">
           <div className="card-body">
             <h2 className="card-title flex justify-center ">Venue Events</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>Venues of where the events are taking place.</p>
             <div className="card-actions justify-end">
              
             </div>
