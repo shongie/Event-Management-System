@@ -1,5 +1,7 @@
 import React from "react";
+import { AiOutlineHome} from 'react-icons/ai';
 import Home from '../home/home';
+
 import './dashboard.css';
 
 function dashboard() {
@@ -24,6 +26,8 @@ function dashboard() {
         <div className="drawer-content flex flex-col  justify-center">
            <main>
             <section id="home"><Home /></section>
+           
+
            </main>
           </div>
         
@@ -43,11 +47,12 @@ function dashboard() {
 
               <li id="scroll">
                 <a href="#home" onClick={() => homes()}>
+                <AiOutlineHome style={{fontSize: "1.5em"}} />
                 Home
                 </a>
               </li>
               <li id="scroll">
-                <a href="#about" >
+                <a href="#manage" >
                 Manage Events
                 </a>
               </li>
