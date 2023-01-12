@@ -4,7 +4,7 @@
 }
 
 .card-body p {
-    font-size: 150%;
+    font-size: large;
     font-weight: bold;
     width: 90%;
     
@@ -19,4 +19,14 @@
 .modal {
     margin-left: 20%;
     background-color: rgba(0, 0, 0, 0.808);
+}
+
+.modal .card-body p {
+    font-size: large;
+}
+
+form .input  {
+    margin-bottom: 10px;
+    width: 200%;
+    border: 2px solid green;
 }

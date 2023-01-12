@@ -115,22 +115,22 @@ function Profile() {
 
                         <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
                         <div class="card-body">
-                            <form className="form" onSubmit={addFirstName}>
-                                <p>Name: </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" value={newFirstName} onChange={e => setNewFirstName(e.currentTarget.value)} />
+                            <form className="form" onSubmit={addFirstName}>   
+                                <input type="text" placeholder="First name" class="input input-bordered input-md w-full max-w-xs" value={newFirstName} onChange={e => setNewFirstName(e.currentTarget.value)} />
 
+                                
+                                <input type="text" placeholder="Last name" class="input input-bordered input-md w-full max-w-xs" value={newlastName} onChange={e => setNewFirstName(e.currentTarget.value)} />
 
-                                <p>Email: </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" value={newlastName} onChange={e => setNewLastName(e.currentTarget.value)} />
-                                <p>Phone number: </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" value={newEmail} onChange={e => setNewEmail(e.currentTarget.value)} />
+                                
+                                <input type="text" placeholder="Email" class="input input-bordered input-md w-full max-w-xs" value={newEmail} onChange={e => setNewLastName(e.currentTarget.value)} />
+                   
+                                
+                                <input type="text" placeholder="Phone number" class="input input-bordered input-md w-full max-w-xs" value={newPhoneNumber} onChange={e => setNewEmail(e.currentTarget.value)} />
 
-                                <p>Phone numbers: </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" value={newPhoneNumber} onChange={e => setNewPhoneNumber(e.currentTarget.value)} />
+                                
+                                <input type="text" placeholder="Gender" class="input input-bordered input-md w-full max-w-xs" value={newGender} onChange={e => setNewPhoneNumber(e.currentTarget.value)} />
 
-                                <p>Gender: </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" value={newGender} onChange={e => setNewGender(e.currentTarget.value)} />
-
+                
                                 <br />
                                 <br />
                                 <button type="submit" className="todo_button btn btn-secondary  btn btn-secondary">Save</button>
