@@ -51,7 +51,7 @@ function Profile() {
 
     return (
         <>
-
+        <div className="cards">
             <div class="card card-compact w-96 bg-base-200 shadow-xl">
                 
                 <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
@@ -68,6 +68,7 @@ function Profile() {
                     </div>
                 </div>
             </div>
+        </div>
 
             {/* The button to open modal */}
             {/* <label htmlFor="my-modal-4" className="btn">open modal</label> */}
@@ -80,10 +81,10 @@ function Profile() {
                 <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
                 <div class="card-body">
 
-                    <p>Name: </p>
-                    <p>Email: </p>
-                    <p>Phone number: </p>
-                    <p>Gender: </p>
+                    <input type="text" placeholder="Name" class="input input-bordered input-md w-full max-w-xs" /> 
+                    <input type="text" placeholder="Email" class="input input-bordered input-md w-full max-w-xs" /> 
+                    <input type="text" placeholder="Phone number" class="input input-bordered input-md w-full max-w-xs" />
+                    <input type="text" placeholder="Gender" class="input input-bordered input-md w-full max-w-xs" /> 
 
                     <div class="card-actions justify-end">
                     <label htmlFor="my-modal-4" className="btn">Save</label> 
