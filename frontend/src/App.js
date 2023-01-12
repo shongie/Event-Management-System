@@ -6,10 +6,10 @@ import Registration from './Register';
 function App() {
   return (
     <>
-  <Registration />
+  {/* <Registration /> */}
   
 
-    {/* <Login /> */}
+    <Login />
     </>
    
 
