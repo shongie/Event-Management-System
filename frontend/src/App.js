@@ -4,6 +4,7 @@ import Manage from './components/manage/manage';
 import View from './components/view/view';
 import Profile from './components/profile/profile';
 import History from './components/history/history';
+import Add from "./components/manage/add";
 
 import "./App.css";
 import Dashboard from "./components/dashboard/dashboard";
@@ -14,6 +15,8 @@ function App() {
   
       <Router>
         <Routes>
+        {/* <Route path='/' element={<Manage />} /> */}
+          <Route path="/create" element={<Add />} /> 
           <Route path="/" element={<Dashboard />}></Route>
           <Route path="manage" element={<Manage/>}></Route>
           <Route path="view" element={<View/>}></Route>

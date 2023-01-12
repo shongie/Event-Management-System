@@ -32,74 +32,75 @@ function Dashboard() {
     navigate('profile')
   }
   return (
-    <section>
-
-      <div className="flex justify-end">
-        <label
-          htmlFor="my-drawer-2"
-          className="btn btn-ghost drawer-button lg:hidden nav"
-        ></label>
-      </div>
-
-      <div className="drawer drawer-mobile">
-        <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col  justify-center">
-          <main>
-            <section id="home"><Home /></section>
-           
-          </main>
+    <section >
+      <div className="color">
+        <div className="flex justify-end">
+          <label
+            htmlFor="my-drawer-2"
+            className="btn btn-ghost drawer-button lg:hidden nav"
+          ></label>
         </div>
-        <div className="drawer-side ">
-          <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-          <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content colg">
-            <div className="down">
-              <div className="avatar flex justify-center avt">
-                <div className="w-24 rounded-full">
+
+        <div className="drawer drawer-mobile">
+          <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+          <div className="drawer-content flex flex-col  justify-center">
+            <main>
+              <section id="home"><Home /></section>
+
+            </main>
+          </div>
+          <div className="drawer-side ">
+            <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
+            <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content colg">
+              <div className="down">
+                <div className="avatar flex justify-center avt">
+                  <div className="w-24 rounded-full">
+                  </div>
                 </div>
-              </div>
-              <div className="flex justify-center font-bold text-5xl named">
-                Student Event Management System
+                <div className="flex justify-center font-bold text-5xl named">
+                  Student Event Management System
 
-              </div>
+                </div>
 
-              <li id="scroll">
-                <a href="#home"  >
-                  <AiOutlineHome style={{ fontSize: "1.5em" }} />
-                  Home
-                </a>
-              </li>
-              <li id="scroll">
-                <a href="#manage" onClick={goTo}>
-                  <GrUserManager style={{ fontSize: "1.5em" }} />
-                  Manage Events
-                </a>
-              </li>
-              <li id="scroll">
-                <a href="#view" onClick={move} >
-                  < GrView style={{ fontSize: "1.5em" }} />
-                  View Events
-                </a>
-              </li>
-              <li id="scroll">
-                <a href="#history" onClick={go} >
-                  < FaHistory style={{ fontSize: "1.5em" }} />
-                  Event Histoty
-                </a>
-              </li>
-              <li id="scroll">
-                <a href="#profile" onClick={to} >
-                  < CgProfile style={{ fontSize: "1.5em" }} />
-                  Profile
-                </a>
-              </li>
-              <li id="scroll">
-                <a href="#logout" >
-                  < BiLogOutCircle style={{ fontSize: "1.5em" }} />
-                  Logout
-                </a>
-              </li>
-            </div>
-          </ul>
+                <li id="scroll">
+                  <a href="#home"  >
+                    <AiOutlineHome style={{ fontSize: "1.5em" }} />
+                    Home
+                  </a>
+                </li>
+                <li id="scroll">
+                  <a href="#manage" onClick={goTo}>
+                    <GrUserManager style={{ fontSize: "1.5em" }} />
+                    Manage Events
+                  </a>
+                </li>
+                <li id="scroll">
+                  <a href="#view" onClick={move} >
+                    < GrView style={{ fontSize: "1.5em" }} />
+                    View Events
+                  </a>
+                </li>
+                <li id="scroll">
+                  <a href="#history" onClick={go} >
+                    < FaHistory style={{ fontSize: "1.5em" }} />
+                    Event Histoty
+                  </a>
+                </li>
+                <li id="scroll">
+                  <a href="#profile" onClick={to} >
+                    < CgProfile style={{ fontSize: "1.5em" }} />
+                    Profile
+                  </a>
+                </li>
+                <li id="scroll">
+                  <a href="#logout" >
+                    < BiLogOutCircle style={{ fontSize: "1.5em" }} />
+                    Logout
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

@@ -68,3 +68,6 @@ main{
 .social a{
     font-size: 2em;
 }
+.color{
+    background: linear-gradient(#00203fff, #adefd1ff);
+}
