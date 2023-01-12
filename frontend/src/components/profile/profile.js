@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from 'react';
-import Home from '../home/home';
+// import Home from '../home/home';
 // import './dashboard.css';
 import './profile.css'
 
@@ -31,7 +31,7 @@ function Profile() {
     // This function updates the component with the
     // current todo data stored in the server
     function update() {
-        fetch(`${process.env.REACT_APP_BACKEND}api/todos`)
+        fetch(`http://localhost:1337/api/todosapi/todos`)
             .then(res => res.json())
             .then(firstName => {
                 setFirstName(firstName.data);
@@ -52,10 +52,9 @@ function Profile() {
             data: {
                 firstName: newFirstName,
                 lastName: newlastName,
-                newEmail: newEmail,
+                email: newEmail,
                 PhoneNumber: newPhoneNumber,
                 gender: newGender,
-
 
             }
         };
@@ -86,17 +85,22 @@ function Profile() {
 
                 <div class="card card-compact h-3/4 w-3/4 bg-base-200  shadow-xl">
 
-                    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" className="profilepic r" /></figure>
+                    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" className="profilepic " /></figure>
                     <div class="card-body">
 
-                        <p>First_name: </p>
-                        <p>Last_name</p>
+                        <p>First name:  </p>
+                        {/* {firstName.attributes.Country} */}
+                        <p>Last name:  </p>
+                        {/* {lastName.attributes.Country} */}
                         <p>Email: </p>
-                        <p>Phone number: </p>
-                        <p>Gender: </p>
+                        {/* {email.attributes.Country} */}
+                        <p>Phone number:  </p>
+                        {/* {phoneNumber.attributes.Country}  */}
+                        <p>Gender:  </p>
+                        {/* {gender.attributes.Country}  */}
 
                         <div class="card-actions justify-end">
-                            <label htmlFor="my-modal-4" className="btn">open modal</label>
+                            <label htmlFor="my-modal-4" className="btn">Edit</label>
                         </div>
                     </div>
                 </div>
@@ -114,7 +118,7 @@ function Profile() {
                             <form className="form" onSubmit={addFirstName}>
                                 <p>Name: </p>
                                 <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" value={newFirstName} onChange={e => setNewFirstName(e.currentTarget.value)} />
-                                
+
 
                                 <p>Email: </p>
                                 <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" value={newlastName} onChange={e => setNewLastName(e.currentTarget.value)} />
@@ -127,8 +131,10 @@ function Profile() {
                                 <p>Gender: </p>
                                 <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" value={newGender} onChange={e => setNewGender(e.currentTarget.value)} />
 
-                                <button type="submit" className="todo_button">Add todo</button>
-
+                                <br />
+                                <br />
+                                <button type="submit" className="todo_button btn btn-secondary  btn btn-secondary">Save</button>
+                      
 
                             </form>
 

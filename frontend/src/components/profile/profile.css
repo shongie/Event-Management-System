@@ -1,4 +1,22 @@
-.cards {
+.cardsn {
     margin-left: 50%; 
     border: 2px solid green;
+}
+
+.card-body p {
+    font-size: 150%;
+    font-weight: bold;
+    width: 90%;
+    
+}
+
+.profilepic {
+    padding: 20px;
+    border-radius: 10%;
+}
+
+/*================================ Modal style ============================================*/
+.modal {
+    margin-left: 20%;
+    background-color: rgba(0, 0, 0, 0.808);
 }
