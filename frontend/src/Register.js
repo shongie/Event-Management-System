@@ -1,12 +1,49 @@
 
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 const config = require('./config.json')
 
-export default function Registration() {
 
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+ export default function Registration() {
+ const  [name, setName] = useState("")
+ const [email, setEmail] = useState("");
+ const [password, setPassword] = useState("");
+  
+    const Register = async (e) => {
+      e.preventDefault();
+  
+      const data = {
+        identifier: email,
+        password: password,
+        name:name,
+
+      };
+      console.log(data);
+  
+      await axios
+        .post(`${config.dev_url}/api/auth/local`, {
+          identifier: email,
+          password: password,
+          name:name,
+
+        })
+        .then((response) => {
+          console.log("Well done!");
+          console.log("User profile", response.data.user);
+          console.log("User token", response.data.jwt);
+        })
+        .catch((error) => {
+          console.log("An error occurred:", error.response);
+        });
+    };
+  
+
+
+
+
+
+
+
 
 
 
@@ -22,7 +59,7 @@ export default function Registration() {
                     </a>
                 </div>
                 <div className="w-full px-6 py-4 mt-6 overflow-hidden bg-white shadow-md sm:max-w-md sm:rounded-lg">
-                    <form>
+                    <form className="mt-6" onSubmit={Register}>
                         <div>
                             <label
                                 htmlFor="name"
@@ -34,6 +71,7 @@ export default function Registration() {
                                 <input
                                     type="text"
                                     name="name"
+                                    onChange={(e) => setName(e.target.value)}
                                     className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                 />
                             </div>
@@ -49,6 +87,7 @@ export default function Registration() {
                                 <input
                                     type="email"
                                     name="email"
+                                    onChange={(e) => setEmail(e.target.value)}
                                     className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                 />
                             </div>
@@ -64,6 +103,7 @@ export default function Registration() {
                                 <input
                                     type="password"
                                     name="password"
+                                    onChange={(e) => setPassword(e.target.value)}
                                     className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                 />
                             </div>
@@ -79,6 +119,7 @@ export default function Registration() {
                                 <input
                                     type="password"
                                     name="password_confirmation"
+                                    onChange={(e) => setPassword(e.target.value)}
                                     className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                 />
                             </div>

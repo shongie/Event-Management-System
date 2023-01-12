@@ -1,15 +1,15 @@
 
 import './App.css';
 import Login from './Login';
-// import Registration from './Register';
+import Registration from './Register';
 
 function App() {
   return (
     <>
-  {/* <Registration /> */}
+  <Registration />
   
 
-    <Login />
+    {/* <Login /> */}
     </>
    
 
