@@ -49,19 +49,19 @@ export default function Homepage() {
                         <div class="card-body">
                             <form className="form" >  {/* onSubmit={changeTodo} */}
                                 <p>Name: </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" value={profile.attributes.first_name} onChange={e => setNewFirstName(e.currentTarget.value)} />
+                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs"  onChange={e => setNewFirstName(e.currentTarget.value)} />
                                 
 
                                 <p>Email: </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" value={newlastName} onChange={e => setNewLastName(e.currentTarget.value)} />
+                                 <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs"  onChange={e => setNewLastName(e.currentTarget.value)} />   {/*value={newlastName} */}
                                 <p>Phone number: </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" value={newEmail} onChange={e => setNewEmail(e.currentTarget.value)} />
+                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs"  onChange={e => setNewEmail(e.currentTarget.value)} />
 
                                 <p>Phone numbers: </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" value={newPhoneNumber} onChange={e => setNewPhoneNumber(e.currentTarget.value)} />
+                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs"  onChange={e => setNewPhoneNumber(e.currentTarget.value)} />
 
                                 <p>Gender: </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" value={newGender} onChange={e => setNewGender(e.currentTarget.value)} />
+                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" onChange={e => setNewGender(e.currentTarget.value)} />
 
                                 <br/><br/>
                                 <button class="btn btn-active btn-primary">Save</button>     
