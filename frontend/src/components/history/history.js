@@ -4,7 +4,7 @@ import React from "react";
 function history() {
   return (
 
-    <div className=" min-h-screen tb mb-8 mt-8">
+    <div className=" min-h-screen tb mb-8 mt-8 color">
     <div className="overflow-x-auto">
       <h2 className="heading text-center text-5xl mb-8 mt-4">History Of Events</h2>
     </div>

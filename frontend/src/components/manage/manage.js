@@ -17,10 +17,21 @@ function Manage() {
       Events.splice(index, 1); // will delete at that particular index
 
       history('/');
+
+      const handleEdit = (id, Venue, EventName, DateOfEvent, LocationOfEvent, TotalNumberOfGuests, StatusOfEvent) =>{
+        localStorage.setItem('Venue', Venue);
+        localStorage.setItem('EventName', EventName);
+        localStorage.setItem('DateOfEvent', DateOfEvent);
+        localStorage.setItem('LocationOfEvent', LocationOfEvent);
+        localStorage.setItem('TotalNumberOfGuests', TotalNumberOfGuests);
+        localStorage.setItem('StatusOfEvent', StatusOfEvent);
+        localStorage.setItem('Id', id);
+        
+    } 
   }
 
   return (
-    <div className="min-h-screen" >
+    <div className="min-h-screen color" >
         <Fragment>
           <div style={{ margin: "1-rem" }}>
           <div className="overflow-x-auto">
@@ -69,7 +80,7 @@ function Manage() {
                           </td>
                           <td>
                             <Link to={`edit`}>
-                              <Button onClick={() => alert(item.id)} >Edit</Button>
+                              <Button onClick={() => handleEdit(item.id, item.Venue, item.EventName, item.Date, item.Location, item.TotalNumberOfGuests, item.StatusOfEvent)} >Edit</Button>
                             </Link>
                             &nbsp;
                             <Button onClick={() => handleDelete(item.id)} >DELETE</Button>

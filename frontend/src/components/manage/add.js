@@ -34,8 +34,9 @@ function Add() {
         history ("/");
     }
 
-    return <div>
-        <Form className="d-grid gap-2" style={{ margin: "15rem" }}  onSubmit={handleSubmit}>
+    return <div className='color min-h-screen'>
+        
+        <Form className="d-grid gap-2 " style={{ margin: "15rem" }}  onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId ="Venue">
             <Form.Control type="text" placeholder="Enter Venue" required onChange={(e) => setVenue(e.target.value)}>
             </Form.Control>
