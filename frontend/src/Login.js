@@ -67,7 +67,7 @@ import React, { useState } from "react";
 import axios from "axios";
 const config = require('./config.json')
 
-export default function Login() {
+  export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
