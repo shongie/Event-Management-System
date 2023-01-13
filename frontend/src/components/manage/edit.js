@@ -12,7 +12,7 @@ function Edit() {
     const [LocationOfEvent, setLocationOfEvent] = useState('');
     const [TotalNumberOfGuests, setTotalNumberOfGuests] = useState('');
     const [StatusOfEvent, setStatusOfEvent] = useState('');
-    const [id, setId] = useState('');
+    // const [id, setId] = useState('');
 
     let history = useNavigate();
 
@@ -41,7 +41,7 @@ function Edit() {
         setLocationOfEvent(localStorage.getItem('LocationOfEvent'));
         setTotalNumberOfGuests(localStorage.getItem('TotalNumberOfGuests'));
         setStatusOfEvent(localStorage.getItem('StatusOfEvent'));
-        setId(localStorage.getItem('Id'));
+        // setId(localStorage.getItem('Id'));
     },[])
 
     return (

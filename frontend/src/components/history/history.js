@@ -6,7 +6,7 @@ function history() {
 
     <div className=" min-h-screen tb mb-8 mt-8 color">
     <div className="overflow-x-auto">
-      <h2 className="heading text-center text-5xl mb-8 mt-4">History Of Events</h2>
+      <h2 className="heading text-center text-5xl mb-8 mt-4" >History Of Events</h2>
     </div>
 
     <table className="table table-compact w-full ">
