@@ -2,7 +2,7 @@ import React from "react";
 
 function view() {
   return (
-    <div className="min-h-screen tb">
+    <div className="min-h-screen tb color">
       <div className="overflow-x-auto">
         <h2 className="heading text-center text-5xl mb-8 mt-4" style={{color: 'white'}} >View Events</h2>
       </div>
