@@ -1,6 +1,6 @@
 .cardsn {
     margin-left: 50%; 
-    border: 2px solid green;
+    
 }
 
 .card-body p {
@@ -10,9 +10,14 @@
     
 }
 
+figure {
+    background-color: grey;
+    border-radius: 10%;
+}
+
 .profilepic {
     padding: 20px;
-    border-radius: 10%;
+    border-radius: 100%;
 }
 
 /*================================ Modal style ============================================*/
