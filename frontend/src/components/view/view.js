@@ -4,7 +4,7 @@ function view() {
   return (
     <div className="min-h-screen tb">
       <div className="overflow-x-auto">
-        <h2 className="heading text-center text-5xl mb-8 mt-4">View Events</h2>
+        <h2 className="heading text-center text-5xl mb-8 mt-4" style={{color: 'white'}} >View Events</h2>
       </div>
 
       <table className="table table-compact w-full ">
