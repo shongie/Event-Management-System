@@ -6,7 +6,8 @@
 .card-body p {
     font-size: large;
     font-weight: bold;
-    width: 90%;
+    width: 100%;
+    
     
 }
 
@@ -20,10 +21,24 @@ figure {
     border-radius: 100%;
 }
 
+.profileH1 {
+    font-size: 200%;
+    font-weight: bolder;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid black;
+}
+
+.cardDetails {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
 /*================================ Modal style ============================================*/
 .modal {
     margin-left: 20%;
-    background-color: rgba(0, 0, 0, 0.808);
+    background-color: rgba(0, 0, 0, 0.877);
 }
 
 .modal .card-body p {
@@ -33,5 +48,4 @@ figure {
 form .input  {
     margin-bottom: 10px;
     width: 200%;
-    border: 2px solid green;
 }

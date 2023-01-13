@@ -1,7 +1,7 @@
 import React from "react";
 import Home from '../home/home';
 import './dashboard.css';
-import Profile from '../profile/profile'
+import Profile from '../profile/profileDetails'
 
 function dashboard() {
 

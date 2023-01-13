@@ -11,24 +11,20 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "firstName": {
+    "first_name": {
       "type": "string"
     },
-    "lastName": {
+    "last_name": {
       "type": "string"
     },
     "email": {
       "type": "email"
     },
-    "phoneNumber": {
+    "phone_number": {
       "type": "string"
     },
     "gender": {
-      "type": "enumeration",
-      "enum": [
-        "Male",
-        "Female"
-      ]
+      "type": "string"
     }
   }
 }
