@@ -18,16 +18,6 @@ function Manage() {
 
       history('/');
 
-      const handleEdit = (id, Venue, EventName, DateOfEvent, LocationOfEvent, TotalNumberOfGuests, StatusOfEvent) =>{
-        localStorage.setItem('Venue', Venue);
-        localStorage.setItem('EventName', EventName);
-        localStorage.setItem('DateOfEvent', DateOfEvent);
-        localStorage.setItem('LocationOfEvent', LocationOfEvent);
-        localStorage.setItem('TotalNumberOfGuests', TotalNumberOfGuests);
-        localStorage.setItem('StatusOfEvent', StatusOfEvent);
-        localStorage.setItem('Id', id);
-        
-    } 
   }
 
   return (
@@ -35,7 +25,7 @@ function Manage() {
         <Fragment>
           <div style={{ margin: "1-rem" }}>
           <div className="overflow-x-auto">
-        <h2 className="heading text-center text-5xl mb-8 mt-4">Manage Events</h2>
+        <h2 className="heading text-center text-5xl mb-8 mt-4" >style={{color: 'white'}} Manage Events</h2>
       </div>
           <Link className=" cre" to={"/create"}>
               <Button size='sm' >Create</Button>
@@ -80,7 +70,7 @@ function Manage() {
                           </td>
                           <td>
                             <Link to={`edit`}>
-                              <Button onClick={() => handleEdit(item.id, item.Venue, item.EventName, item.Date, item.Location, item.TotalNumberOfGuests, item.StatusOfEvent)} >Edit</Button>
+                              <Button onClick={() => alert(item.id, item.Venue, item.EventName, item.Date, item.Location, item.TotalNumberOfGuests, item.StatusOfEvent)} >Edit</Button>
                             </Link>
                             &nbsp;
                             <Button onClick={() => handleDelete(item.id)} >DELETE</Button>
