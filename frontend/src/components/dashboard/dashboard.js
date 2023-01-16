@@ -11,6 +11,7 @@ import { BiLogOutCircle } from 'react-icons/bi';
 import Home from '../home/home';
 
 import './dashboard.css';
+import Profile from '../profile/profileDetails'
 
 function Dashboard() {
 
@@ -20,9 +21,7 @@ function Dashboard() {
     navigate('manage')
   }
 
-  function move() {
-    navigate('view')
-  }
+ 
 
   function go() {
     navigate('history')
@@ -78,12 +77,7 @@ function Dashboard() {
                     Book Events
                   </a>
                 </li>
-                <li id="scroll">
-                  <a href="#view" onClick={move} >
-                    < GrView style={{ fontSize: "1.5em" }} />
-                    View Events
-                  </a>
-                </li>
+                
                 <li id="scroll">
                   <a href="#history" onClick={go} >
                     < FaHistory style={{ fontSize: "1.5em" }} />

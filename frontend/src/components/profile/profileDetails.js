@@ -61,21 +61,30 @@ axios
             {/* <label htmlFor="my-modal-4" className="modal cursor-pointer">
                 <div class="card card-compact  w-96 bg-base-200 shadow-xl flex justify-center">
                     <h1 className="card-title profileH1">Edit Profile</h1>
+
                     <div class="card-body">
                          <form className="form" >  {/* onSubmit={changeTodo} */}
                            {/* <p>Name: </p>
                             <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" onChange={e => setNewFirstName(e.currentTarget.value)} />
+
+
                             <p>Email: </p>
                             <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" onChange={e => setNewLastName(e.currentTarget.value)} />   
                             <p>Phone number: </p>
                             <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" onChange={e => setNewEmail(e.currentTarget.value)} />
+
                             <p>Phone numbers: </p>
                             <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" onChange={e => setNewPhoneNumber(e.currentTarget.value)} />
+
                             <p>Gender: </p>
                             <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" onChange={e => setNewGender(e.currentTarget.value)} />
+
                             <br /><br />
                             <button class="btn btn-active btn-primary">Save</button>
+
+
                         </form> 
+
                          This is a list view of all the data in the "todo" state variable 
                         <div>
                             {
@@ -93,3 +102,4 @@ axios
         </div>
     );
 }
+
