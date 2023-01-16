@@ -1,7 +1,7 @@
 
 import './App.css';
 import Dashboard from './components/dashboard/dashboard';
-import Profile from '../src/components/profile/profileDetails'
+// import Profile from '../src/components/profile/profileDetails'
 
 function App() {
   return (

@@ -2,6 +2,7 @@
 import React from "react";
 import useFetch from "../../hooks/usefetch";
 import { Link } from "react-router-dom";
+import './profile.css'
 
 export default function Homepage() {
     const { loading, error, data } = useFetch('http://localhost:1337/api/profiles');
@@ -20,11 +21,11 @@ export default function Homepage() {
                         data.data.map(profile => (
 
                             <div key={profile.attributes.ID} className="review-card">
-                                <p> First name: {profile.attributes.first_name}</p>
-                                <p> Last_name: {profile.attributes.last_name}</p>
-                                <p> Email: {profile.attributes.email}</p>
-                                <p>Phone_number: {profile.attributes.phone_number}</p>
-                                <p> Gender: {profile.attributes.gender}</p>
+                                <p> First name: <span className="spacetext"></span> {profile.attributes.first_name}</p>
+                                <p> Last name: <span className="spacetext"></span>{profile.attributes.last_name}</p>
+                                <p> Email: <span className="spacetext"></span> {profile.attributes.email}</p>
+                                <p>Phone number: <span className="spacetext"></span> {profile.attributes.phone_number}</p>
+                                <p> Gender: <span className="spacetext"></span> {profile.attributes.gender}</p>
 
 
                                 {/* <p>{profile.attributes.body.substring(0, 200)}</p> */}
@@ -39,47 +40,47 @@ export default function Homepage() {
             </div>
 
             {/* The button to open modal */}
-                {/* <label htmlFor="my-modal-4" className="btn">open modal</label> */}
-                {/* Put this part before </body> tag */}
-                <input type="checkbox" id="my-modal-4" className="modal-toggle" />
-                <label htmlFor="my-modal-4" className="modal cursor-pointer">
-                    <div class="card card-compact  w-96 bg-base-200 shadow-xl flex justify-center">
-                        <h1 className="card-title profileH1">Edit Profile</h1>
+            {/* <label htmlFor="my-modal-4" className="btn">open modal</label> */}
+            {/* Put this part before </body> tag */}
+            <input type="checkbox" id="my-modal-4" className="modal-toggle" />
+            {/* <label htmlFor="my-modal-4" className="modal cursor-pointer">
+                <div class="card card-compact  w-96 bg-base-200 shadow-xl flex justify-center">
+                    <h1 className="card-title profileH1">Edit Profile</h1>
 
-                        <div class="card-body">
-                            <form className="form" >  {/* onSubmit={changeTodo} */}
-                                <p>Name: </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs"  onChange={e => setNewFirstName(e.currentTarget.value)} />
-                                
-
-                                <p>Email: </p>
-                                 <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs"  onChange={e => setNewLastName(e.currentTarget.value)} />   {/*value={newlastName} */}
-                                <p>Phone number: </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs"  onChange={e => setNewEmail(e.currentTarget.value)} />
-
-                                <p>Phone numbers: </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs"  onChange={e => setNewPhoneNumber(e.currentTarget.value)} />
-
-                                <p>Gender: </p>
-                                <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" onChange={e => setNewGender(e.currentTarget.value)} />
-
-                                <br/><br/>
-                                <button class="btn btn-active btn-primary">Save</button>     
+                    <div class="card-body">
+                         <form className="form" >  {/* onSubmit={changeTodo} */}
+                           {/* <p>Name: </p>
+                            <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" onChange={e => setNewFirstName(e.currentTarget.value)} />
 
 
-                            </form>
+                            <p>Email: </p>
+                            <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" onChange={e => setNewLastName(e.currentTarget.value)} />   
+                            <p>Phone number: </p>
+                            <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" onChange={e => setNewEmail(e.currentTarget.value)} />
 
-                            {/* This is a list view of all the data in the "todo" state variable */}
-                            <div>
-                                {
-                                    profile.map((profile, i) => {
-                                        return <addFirstName profile={profile} key={i} update={update} />
-                                    })
-                                }
-                            </div>
+                            <p>Phone numbers: </p>
+                            <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" onChange={e => setNewPhoneNumber(e.currentTarget.value)} />
+
+                            <p>Gender: </p>
+                            <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" onChange={e => setNewGender(e.currentTarget.value)} />
+
+                            <br /><br />
+                            <button class="btn btn-active btn-primary">Save</button>
+
+
+                        </form> 
+
+                         This is a list view of all the data in the "todo" state variable 
+                        <div>
+                            {
+                                profile.map((profile, i) => {
+                                    return <addFirstName profile={profile} key={i} update={update} />
+                                })
+                            }
                         </div>
                     </div>
-                </label>
+                </div> 
+            </label> */}
 
 
 

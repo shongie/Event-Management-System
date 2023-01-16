@@ -1,14 +1,23 @@
-.cardsn {
-    margin-left: 50%; 
-    
+.card {
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.cardsn {
+    margin-left: 50%; 
+}
+
+
+
 .card-body p {
-    font-size: large;
-    font-weight: bold;
+    font-size: 150%;
+    font-weight: bolder;
     width: 100%;
-    
-    
+    padding: 15px;
+}
+
+.spacetext {
+    text-align: center;
 }
 
 figure {
@@ -49,3 +58,14 @@ form .input  {
     margin-bottom: 10px;
     width: 200%;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    .card-body p {
+        font-size: 150%;
+        font-weight: bolder;
+        width: 100%;
+        padding: 15px;
+    }
+  }
