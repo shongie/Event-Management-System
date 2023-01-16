@@ -10,13 +10,23 @@ import Edit from "./components/manage/edit";
 import "./App.css";
 import Dashboard from "./components/dashboard/dashboard";
 
+
+interface RoutesProps {
+  children?: React.ReactNode;
+  location?: Partial<Location> | string;
+}
+
+<Routes location>
+  <Route />
+</Routes>;
+
 function App() {
   return (
     <div >
   
       <Router>
         <Routes>
-        {/* <Route path='/' element={<Manage />} /> */}
+        <Route path='/' element={<Manage />} /> 
           <Route path="/create" element={<Add />} /> 
           <Route path="/edir" element={<Edit />} />
           <Route path="/" element={<Dashboard />}></Route>
