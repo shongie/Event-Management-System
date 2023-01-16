@@ -144,9 +144,10 @@ const config = require('./config.json')
         <p className="mt-8 text-xs font-light text-center text-gray-700">
           {" "}
           Don't have an account?{" "}
-          <a href="#" className="font-medium text-black-900 hover:underline">
+          <Link to={"/register"} className="font-medium text-black-900 hover:underline">
+            
             Sign up
-          </a>
+          </Link>
         </p>
       </div>
     </div>

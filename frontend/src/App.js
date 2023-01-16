@@ -10,17 +10,19 @@ import {
 } from "react-router-dom";
 import ForgotPasswordPage from './password';
 
+
 function App() {
   return (
     <>
     <Router>
  
-{/* <Routes> */}
-    {/* <Route path='/forgot-password' element={<ForgotPasswordPage/>}></Route>
-            <Route path='/' element={<Login/>}></Route></Routes> */}
+  <Routes>
+    <Route path='/forgot-password' element={<ForgotPasswordPage/>}></Route>
+            <Route path='/' element={<Login/>}></Route>
+            <Route path='/register' element={<Registration/>}></Route>
+            {/* <Registration/> */}
             
-            <Registration/>
-           
+            </Routes> 
     </Router>
     </>
    
