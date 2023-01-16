@@ -135,7 +135,7 @@ const config = require('./config.json')
             Forget Password?
           </Link>
           <div className="mt-6">
-            <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-red-700 rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-600">
+            <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform btn-primary rounded-md hover:btn-primary focus:outline-none focus:btn-primary">
               Login
             </button>
           </div>

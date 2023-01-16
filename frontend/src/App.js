@@ -15,9 +15,11 @@ function App() {
     <>
     <Router>
  
-<Routes>
-    <Route path='/forgot-password' element={<ForgotPasswordPage/>}></Route>
-            <Route path='/' element={<Login/>}></Route></Routes>
+{/* <Routes> */}
+    {/* <Route path='/forgot-password' element={<ForgotPasswordPage/>}></Route>
+            <Route path='/' element={<Login/>}></Route></Routes> */}
+            
+            <Registration/>
            
     </Router>
     </>
