@@ -14,10 +14,10 @@ import "./App.css";
 import Dashboard from "./components/dashboard/dashboard";
 
 
-interface RoutesProps {
-  children?: React.ReactNode;
-  location?: Partial<Location> | string;
-}
+// interface RoutesProps {
+//   children?: React.ReactNode;
+//   location?: Partial<Location> | string;
+// }
 
 
 function App() {
