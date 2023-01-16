@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import axios from 'axios';
 import useFetch from "../../hooks/usefetch";
 import { Link } from "react-router-dom";
 import './profile.css'
@@ -11,6 +12,20 @@ export default function Homepage() {
     if (error) return <p> Error 😦 </p>;
     console.log(data.data[0].attributes)
     console.log(data)
+
+
+    
+
+axios
+  .put('http://localhost:1337/api/restaurants/2', {
+    categories: [2],
+  })
+  .then(response => {
+    console.log(response);
+  });
+
+
+
     return (
         <div class="card card-compact h-3/4 w-2/3 bg-base-200  shadow-xl">
 
