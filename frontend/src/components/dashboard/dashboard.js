@@ -11,6 +11,7 @@ import { BiLogOutCircle } from 'react-icons/bi';
 import Home from '../home/home';
 
 import './dashboard.css';
+import Profile from '../profile/profileDetails'
 
 function Dashboard() {
 
