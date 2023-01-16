@@ -1,4 +1,16 @@
 
+<<<<<<< HEAD
+import './App.css';
+import Dashboard from './components/dashboard/dashboard';
+// import Profile from '../src/components/profile/profileDetails'
+
+function App() {
+  return (
+    <div data-theme='cupcake' >
+    
+    <Dashboard/>
+    
+=======
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Manage from './components/manage/manage';
 import View from './components/view/view';
@@ -13,6 +25,7 @@ import Dashboard from "./components/dashboard/dashboard";
 function App() {
   return (
     <div >
+>>>>>>> 9f19669481e0ed2d03eb8b66118117c593ac1b4d
   
       <Router>
         <Routes>

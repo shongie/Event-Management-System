@@ -1,0 +1,71 @@
+.card {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardsn {
+    margin-left: 50%; 
+}
+
+
+
+.card-body p {
+    font-size: 150%;
+    font-weight: bolder;
+    width: 100%;
+    padding: 15px;
+}
+
+.spacetext {
+    text-align: center;
+}
+
+figure {
+    background-color: grey;
+    border-radius: 10%;
+}
+
+.profilepic {
+    padding: 20px;
+    border-radius: 100%;
+}
+
+.profileH1 {
+    font-size: 200%;
+    font-weight: bolder;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid black;
+}
+
+.cardDetails {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/*================================ Modal style ============================================*/
+.modal {
+    margin-left: 20%;
+    background-color: rgba(0, 0, 0, 0.877);
+}
+
+.modal .card-body p {
+    font-size: large;
+}
+
+form .input  {
+    margin-bottom: 10px;
+    width: 200%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .card-body p {
+        font-size: 150%;
+        font-weight: bolder;
+        width: 100%;
+        padding: 15px;
+    }
+  }

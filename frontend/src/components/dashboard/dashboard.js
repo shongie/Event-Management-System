@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import {IoMdNotificationsOutline} from 'react-icons/io';
 import { AiOutlineHome } from 'react-icons/ai';
 import { FaHistory } from 'react-icons/fa';
 import { GrView, GrUserManager } from 'react-icons/gr';
@@ -11,6 +11,7 @@ import { BiLogOutCircle } from 'react-icons/bi';
 import Home from '../home/home';
 
 import './dashboard.css';
+import Profile from '../profile/profileDetails'
 
 function Dashboard() {
 
@@ -26,6 +27,10 @@ function Dashboard() {
 
   function go() {
     navigate('history')
+  }
+
+  function not() {
+    navigate('notification')
   }
 
   function to() {
@@ -71,7 +76,7 @@ function Dashboard() {
                 <li id="scroll">
                   <a href="#manage" onClick={goTo}>
                     <GrUserManager style={{ fontSize: "1.5em" }} />
-                    Manage Events
+                    Book Events
                   </a>
                 </li>
                 <li id="scroll">
@@ -84,6 +89,12 @@ function Dashboard() {
                   <a href="#history" onClick={go} >
                     < FaHistory style={{ fontSize: "1.5em" }} />
                     Event Histoty
+                  </a>
+                </li>
+                <li id="scroll">
+                  <a href="#history" onClick={not} >
+                    < IoMdNotificationsOutline style={{ fontSize: "1.5em" }} />
+                   Notification
                   </a>
                 </li>
                 <li id="scroll">

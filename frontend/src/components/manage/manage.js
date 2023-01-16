@@ -25,7 +25,7 @@ function Manage() {
         <Fragment>
           <div style={{ margin: "1-rem" }}>
           <div className="overflow-x-auto">
-        <h2 className="heading text-center text-5xl mb-8 mt-4" >style={{color: 'white'}} Manage Events</h2>
+        <h2 className="heading text-center text-5xl mb-8 mt-4" style={{color: 'white'}}>Manage Events</h2>
       </div>
           <Link className=" cre" to={"/create"}>
               <Button size='sm' >Create</Button>
@@ -99,4 +99,3 @@ function Manage() {
 }
 
 export default Manage;
-
